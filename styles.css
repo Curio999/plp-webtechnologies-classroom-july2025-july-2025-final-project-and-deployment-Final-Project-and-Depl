@@ -1,0 +1,119 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and navigation */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #0066cc;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(180deg, rgba(0, 102, 204, 0.08), transparent);
+}
+
+/* Service cards */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact form */
+form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004999;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .features {
+    flex-direction: column;
+  }
+}
